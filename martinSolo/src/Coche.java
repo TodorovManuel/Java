@@ -1,5 +1,3 @@
-package unidad0;
-
 public class Coche {
     private String marca;
     private String modelo;
@@ -42,19 +40,24 @@ public class Coche {
         this.marca = marca;
         this.modelo = modelo;
         this.color = color;
+        this.velocidad = velocidad;
     }
 
     public double acelerar(double aceleracion) {
-        double velocidadActual = velocidad + aceleracion;
-        return velocidadActual;
+        this.velocidad = velocidad + aceleracion;
+        return velocidad;
     }
 
-    public double frenar(double freno, double velocidadActual) {
-        velocidadActual = velocidad - freno;
-        return velocidadActual;
+    public double frenar(double freno) {
+        this.velocidad = velocidad - freno;
+        if(this.velocidad<0) {
+            this.velocidad=0;
+        }
+        return velocidad;
     }
 
-    public double velocidadActual(double velocidadActual) {
-        return velocidadActual;
+    public double velocidadActual(double velocidad) {
+        System.out.println("La velocidad actual es: " + velocidad + " km");
+        return velocidad;
     }
 }

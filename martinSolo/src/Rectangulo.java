@@ -1,5 +1,3 @@
-package unidad0;
-
 public class Rectangulo {
     private double base;
     private double altura;
