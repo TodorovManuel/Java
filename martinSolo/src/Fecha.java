@@ -42,6 +42,28 @@ public class Fecha {
         }
         return dias;
     }
+
+    public void menorMayor(int dia, int mes, int anio) {
+        if(this.anio>anio) {
+            System.out.println("El libro de " + this.anio + this.mes + this.dia + " es mas nuevo");
+        } else if(this.anio<anio) {
+            System.out.println("El libro de " + this.anio + this.mes + this.dia + " es mas viejo");
+        } else {
+            if(this.mes>mes) {
+                System.out.println("El libro de " + this.anio + this.mes + this.dia + " es mas nuevo");
+            } else if(this.mes<mes) {
+                System.out.println("El libro de " + this.anio + this.mes + this.dia + " es mas viejo");
+            } else {
+                if (this.dia > dia) {
+                    System.out.println("El libro de " + this.anio + this.mes + this.dia + " es mas nuevo");
+                } else if (this.dia < dia) {
+                    System.out.println("El libro de " + this.anio + this.mes + this.dia + " es mas viejo");
+                } else {
+                    System.out.println("Los libros fueron publicados en la misma fecha");
+                }
+            }
+        }
+    }
 }
 
 

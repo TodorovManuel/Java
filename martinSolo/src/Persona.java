@@ -33,6 +33,15 @@ public class Persona {
         this.direccion = direccion;
     }
 
+    public Persona( int edad) {
+        this.edad = edad;
+    }
+
+    public Persona(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
     public void muestraDatos() {
         System.out.println("Nombre: " + nombre + " Edad: " + edad + " Direccion: " + direccion);
     }

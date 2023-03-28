@@ -23,12 +23,35 @@ public class Main {
       //  Persona personita = new Persona("Benicio", 5, "Blanco encalada 2234");
       //  personita.muestraDatos();
 
-          Fecha fechita = new Fecha(6, 8, 2005);
-          fechita.valida(40,0,0);
-          Scanner lectura = new Scanner(System.in);
-        System.out.println("Ingrese el mes del cual quiere saber los dias, ingrese en formato del 1 al 12");
-        int mesIngresado = lectura.nextInt();
-        fechita.diasMes(mesIngresado);
-        System.out.println("El mes " + mesIngresado + " tiene " + fechita.diasMes(mesIngresado));
+        //    Fecha fechita = new Fecha(6, 8, 2005);
+         //   fechita.valida(6,8,2005);
+          //  Scanner lecturaDia = new Scanner(System.in);
+           // System.out.println("Ingrese el dia: ");
+           // int diaIngresado = lecturaDia.nextInt();
+            //Scanner lecturaMes = new Scanner(System.in);
+        // int mesIngresado = lecturaMes.nextInt();
+          //  Scanner lecturaAnio = new Scanner(System.in);
+            //int anioIngresado = lecturaAnio.nextInt();
+
+        //Persona personita = new Persona("Pedrito", 40, "Nazca y cochrane");
+        //Libro librito = new Libro();
+        //librito.mostrarInfo("Pedro aventurero",4355532, 200, "El clasico", personita, fechita);
+
+
+       //   Cafetera cafeterita = new Cafetera();
+       //   Scanner lectura = new Scanner(System.in);
+       // System.out.println("Ingrese la capacidad de la cafetera");
+       // int capadidadIngresada = lectura.nextInt();
+       // cafeterita.agregarCafe(capadidadIngresada);
+
+       // Scanner lecturaCantidad = new Scanner(System.in);
+       // System.out.println("Ingrese la cantidad de la cafetera");
+       // int cantidadIngresada = lecturaCantidad.nextInt();
+       // cafeterita.agregarCafe(cantidadIngresada);
+       // System.out.println("La cantidad actual de la cafetera es: " + cafeterita.agregarCafe(cantidadIngresada));
+
+       // Cancion cancioncita = new Cancion();
+       // System.out.println("El titulo es: " + cancioncita.getTitulo() + "El autor es: " + cancioncita.getAutor());
+
     }
 }
