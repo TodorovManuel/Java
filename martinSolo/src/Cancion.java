@@ -4,8 +4,8 @@ public class Cancion {
     private Persona autor;
 
     public Cancion() {
-        this.titulo="";
-        this.autor.setNombre("");
+        this.titulo="Si estuviesemos juntos";
+        this.autor= new Persona("Duki", 27);
     }
     public Cancion(String titulo, Persona autor) {
         this.titulo = titulo;
