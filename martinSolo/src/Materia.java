@@ -33,16 +33,21 @@ public class Materia {
     }
 
     public double promedioMateria(ArrayList<Double> notas) {
-        double sumaNotas = 0;
+        double sumaNotasMateria = 0;
         for(double nota: notas) {
-            sumaNotas = sumaNotas + nota;
+            sumaNotasMateria = sumaNotasMateria + nota;
         }
-        double promedio = sumaNotas/notas.size();
+        double promedio = sumaNotasMateria/notas.size();
         return promedio;
     }
 
     public double promedioAlumno() {
-
+        double sumaNotasAlumno = 0;
+        for(double nota: notas) {
+            sumaNotasAlumno = sumaNotasAlumno + nota;
+        }
+        double promedioAlumno = sumaNotasAlumno/notas.size();
+        return promedioAlumno;
     }
 }
 

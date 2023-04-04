@@ -63,8 +63,12 @@ public class Alumno {
         }
         System.out.println(mayorNota);
     }
-    public  int promAlumno(ArrayList<Integer>listaNotas){
-
+    public double promedioAlumno() {
+        double sumaNotasAlumno = 0;
+        for(double nota: listaNotas) {
+            sumaNotasAlumno = sumaNotasAlumno + nota;
+        }
+        double promedioAlumno = sumaNotasAlumno/listaNotas.size();
+        return promedioAlumno;
     }
-
 }
