@@ -8,8 +8,9 @@ public class Jugador {
         this.fechaNacimiento = fechaNacimiento;
         this.numeroCamiseta = numeroCamiseta;
     }
-
     public String getNombre() {
+
+
         return nombre;
     }
 
