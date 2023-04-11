@@ -1,4 +1,4 @@
-public class Circulo {
+public class Circulo extends FiguraGeometrica{
     private double radio = 2;
 
     public Circulo() {this.radio = 2;}

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb80826b-a99d-4600-917f-8dbcf41c57e5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../src/Materia.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/Materia.java" afterDir="false" />
-    </list>
+    <list default="true" id="fb80826b-a99d-4600-917f-8dbcf41c57e5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +19,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/lostt/Escritorio/Java/martinSolo/out"
+    "last_opened_file_path": "/home/lostt/Escritorio/Java/martinSolo/out/production/martinSolo/Main.class"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

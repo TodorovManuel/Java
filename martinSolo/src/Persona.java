@@ -3,6 +3,10 @@ public class Persona {
     private int edad;
     private String direccion;
 
+    public Persona() {
+
+    }
+
     public String getNombre() {
         return nombre;
     }

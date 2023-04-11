@@ -1,7 +1,7 @@
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class Alumno {
+public class Alumno extends Persona{
 
     private String apellido;
     private Fecha fechaNacimiento;
@@ -10,6 +10,7 @@ public class Alumno {
     private ArrayList<Materia>materias ;
 
     public Alumno(String apellido, Fecha fechaNacimiento, ArrayList<Integer> listaNotas, ArrayList<Materia>materias) {
+        super();
         this.apellido = apellido;
         this.fechaNacimiento = fechaNacimiento;
         this.listaNotas = listaNotas;

@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        ArrayList<Equipo> equipoArrayList = new ArrayList<>();
+        /*  ArrayList<Equipo> equipoArrayList = new ArrayList<>();
         ArrayList<Jugador> jugadorArrayList=new ArrayList<>();
         equipoArrayList.add(new Equipo("Mañana", "Lunes","JoseS clubes","Urquiza", jugadorArrayList));
         jugadorArrayList.add(new Jugador("Jose", "2-5-2020", 3));
@@ -41,6 +41,18 @@ public class Main {
         jugadorArrayList.add(new Jugador("Alfonso", "2-5-2012", 11));
         jugadorArrayList.add(new Jugador("Alfonso", "9-5-2012", 47));
         jugadorArrayList.add(new Jugador("Alfonso", "10-10-2015", 27));
+        */
+        /* Empleado E1 = new Empleado("Rafa");
+        Directivo D1 = new Directivo("Mario");
+        Operario OP1 = new Operario("Alfonso");
+        Oficial OF1 = new Oficial("Luis");
+        Tecnico T1 = new Tecnico("Pablo");
+        System.out.println(E1);
+        System.out.println(D1);
+        System.out.println(OP1);
+        System.out.println(OF1);
+        System.out.println(T1);
+         */
 
 
     }

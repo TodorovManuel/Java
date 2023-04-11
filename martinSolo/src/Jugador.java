@@ -1,16 +1,15 @@
-public class Jugador {
+public class Jugador extends Persona{
     private String nombre;
     private String fechaNacimiento;
     private Integer numeroCamiseta;
 
     public Jugador(String nombre, String fechaNacimiento, Integer numeroCamiseta) {
+        super();
         this.nombre = nombre;
         this.fechaNacimiento = fechaNacimiento;
         this.numeroCamiseta = numeroCamiseta;
     }
     public String getNombre() {
-
-
         return nombre;
     }
 
