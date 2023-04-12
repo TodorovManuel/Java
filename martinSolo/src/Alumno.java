@@ -2,8 +2,21 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Alumno extends Persona{
+    private String division;
 
-    private String apellido;
+    public Alumno(String nombre, String apellido, String division) {
+        super(nombre, apellido);
+        this.division = division;
+    }
+
+    public String getDivision() {
+        return division;
+    }
+
+    public void setDivision(String division) {
+        this.division = division;
+    }
+    /* private String apellido;
     private Fecha fechaNacimiento;
     private ArrayList<Integer> listaNotas;
 
@@ -72,4 +85,6 @@ public class Alumno extends Persona{
         double promedioAlumno = sumaNotasAlumno/listaNotas.size();
         return promedioAlumno;
     }
+
+    */
 }
