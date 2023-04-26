@@ -4,56 +4,25 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        /*  ArrayList<Equipo> equipoArrayList = new ArrayList<>();
-        ArrayList<Jugador> jugadorArrayList=new ArrayList<>();
-        equipoArrayList.add(new Equipo("Mañana", "Lunes","JoseS clubes","Urquiza", jugadorArrayList));
-        jugadorArrayList.add(new Jugador("Jose", "2-5-2020", 3));
-        jugadorArrayList.add(new Jugador("Joseluis", "2-6-2020", 4));
-        jugadorArrayList.add(new Jugador("Jose", "2-6-2020", 5));
-        jugadorArrayList.add(new Jugador("Jose", "8-4-2020", 6));
-        jugadorArrayList.add(new Jugador("Jose", "10-1-2020", 7));
-        jugadorArrayList.add(new Jugador("Jose", "2-5-2020", 8));
-        jugadorArrayList.add(new Jugador("Jose", "30-8-2020", 9));
-        jugadorArrayList.add(new Jugador("Jose", "2-5-2002", 11));
-        jugadorArrayList.add(new Jugador("Jose", "9-5-2002", 40));
-        jugadorArrayList.add(new Jugador("Jose", "10-10-2002", 22));
+    ArrayList<Llamada>llamadas = new ArrayList<>();
+    llamadas.add(new Llamada(new EmpleadoTelefono(
+            "Pepe", "Martinez", 23435334, "Argentina", 1123327736),
+            new EmpleadoTelefono("Jose", "Pandoni", 22321190, "Brasil", 234333875),
+            "8:32", "12-5-2023"));
 
-        equipoArrayList.add(new Equipo("Mañana", "Lunes","Pepes clubes","Pueyrredon", jugadorArrayList));
-        jugadorArrayList.add(new Jugador("Pepe", "2-5-2006", 8));
-        jugadorArrayList.add(new Jugador("Pepeluis", "2-6-2001", 7));
-        jugadorArrayList.add(new Jugador("Pepe", "2-6-2005", 5));
-        jugadorArrayList.add(new Jugador("Pepe", "8-4-2022", 6));
-        jugadorArrayList.add(new Jugador("Pepe", "10-1-2019", 10));
-        jugadorArrayList.add(new Jugador("Pepe", "2-5-2010", 8));
-        jugadorArrayList.add(new Jugador("Pepe", "30-8-2010", 9));
-        jugadorArrayList.add(new Jugador("Pepe", "2-5-2012", 11));
-        jugadorArrayList.add(new Jugador("Pepe", "9-5-2012", 47));
-        jugadorArrayList.add(new Jugador("Pepe", "10-10-2015", 27));
+        llamadas.add(new Llamada(new EmpleadoTelefono(
+                "Jose", "Luis", 23415224, "Argentina", 1167282870),
+                new EmpleadoTelefono("Martin", "Bensai", 21229084, "Brasil", 234420534),
+                "2:20", "14-4-2023"));
 
-        equipoArrayList.add(new Equipo("Noche", "Martes","Alfonsos clubes","Flores", jugadorArrayList));
-        jugadorArrayList.add(new Jugador("Alfonso", "2-5-2006", 8));
-        jugadorArrayList.add(new Jugador("Alfonsoluis", "2-6-2001", 7));
-        jugadorArrayList.add(new Jugador("Alfonso", "2-6-2005", 5));
-        jugadorArrayList.add(new Jugador("Alfonso", "8-4-2022", 6));
-        jugadorArrayList.add(new Jugador("Alfonso", "10-1-2019", 10));
-        jugadorArrayList.add(new Jugador("Alfonso", "2-5-2010", 8));
-        jugadorArrayList.add(new Jugador("Alfonso", "30-8-2010", 9));
-        jugadorArrayList.add(new Jugador("Alfonso", "2-5-2012", 11));
-        jugadorArrayList.add(new Jugador("Alfonso", "9-5-2012", 47));
-        jugadorArrayList.add(new Jugador("Alfonso", "10-10-2015", 27));
-        */
-        /* Empleado E1 = new Empleado("Rafa");
-        Directivo D1 = new Directivo("Mario");
-        Operario OP1 = new Operario("Alfonso");
-        Oficial OF1 = new Oficial("Luis");
-        Tecnico T1 = new Tecnico("Pablo");
-        System.out.println(E1);
-        System.out.println(D1);
-        System.out.println(OP1);
-        System.out.println(OF1);
-        System.out.println(T1);
-         */
+        llamadas.add(new Llamada(new EmpleadoTelefono(
+                "Ernesto", "Bandini", 259920438, "Australia", 1176435268),
+                new EmpleadoTelefono("Ulises", "Jeperpein", 30423357, "Afganistan", 1142490873),
+                "15:32", "30-9-2023"));
 
-
+        llamadas.add(new Llamada(new EmpleadoTelefono(
+                "Gustavo", "Freud", 23435334, "Estados Unidos", 90908743),
+                new EmpleadoTelefono("Faustino", "Sarmiento", 198224296, "Argentina", 782319924),
+                "8:32", "12-5-2023"));
     }
 }
