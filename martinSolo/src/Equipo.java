@@ -1,34 +1,48 @@
 import java.util.ArrayList;
 
 public class Equipo {
-    private String turno;
-    private String dia;
+
+    public enum Turnos {
+        MAÑANA, TARDE, NOCHE
+    }
+    public  enum Dia{
+        LUNES, MARTES, MIERCOLES, JUEVES, VIERNES, SABADO, DOMINGO
+
+    }
     private String nombre;
+    private Turnos turnos;
+    private Dia dias;
     private String barrio;
     private ArrayList<Jugador>jugadores;
 
+    public Equipo(Dia dias) {
+        this.dias = dias;
+    }
+
+    public Dia getDias() {
+        return dias;
+    }
+
+    public void setDias(Dia dias) {
+        this.dias = dias;
+    }
+
     public Equipo(String turno, String dia, String nombre, String barrio, ArrayList<Jugador> jugadores) {
-        this.turno = turno;
-        this.dia = dia;
         this.nombre = nombre;
         this.barrio = barrio;
         this.jugadores = jugadores;
     }
 
-    public String getTurno() {
-        return turno;
+    public Equipo(Turnos turnos) {
+        this.turnos = turnos;
     }
 
-    public void setTurno(String turno) {
-        this.turno = turno;
+    public Turnos getTurnos() {
+        return turnos;
     }
 
-    public String getDia() {
-        return dia;
-    }
-
-    public void setDia(String dia) {
-        this.dia = dia;
+    public void setTurnos(Turnos turnos) {
+        this.turnos = turnos;
     }
 
     public String getNombre() {
