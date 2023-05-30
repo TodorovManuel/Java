@@ -5,10 +5,6 @@ public class Equipo {
     public enum Turnos {
         MAÑANA, TARDE, NOCHE
     }
-    public  enum Dia{
-        LUNES, MARTES, MIERCOLES, JUEVES, VIERNES, SABADO, DOMINGO
-
-    }
     private String nombre;
     private Turnos turnos;
     private Dia dias;

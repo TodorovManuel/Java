@@ -1,20 +1,51 @@
-public class Empleado {
-    protected String nombre;
+import java.time.LocalDateTime;
+import java.util.HashSet;
 
-    public Empleado(String nombre) {
-        this.nombre = nombre;
+public class Empleado extends Persona{
+    HashSet<Dia>diasLaborables;
+    HashSet<LocalDateTime>asistencia;
+
+    public Empleado(Integer telefono, Fecha fechaNacimiento, HashSet<Dia> diasLaborables, HashSet<LocalDateTime> asistencia) {
+        super(telefono, fechaNacimiento);
+        this.diasLaborables = diasLaborables;
+        this.asistencia = asistencia;
     }
 
-    public String getNombre() {
-        return nombre;
+    public Empleado(String nombre, String apellido, HashSet<Dia> diasLaborables, HashSet<LocalDateTime> asistencia) {
+        super(nombre, apellido);
+        this.diasLaborables = diasLaborables;
+        this.asistencia = asistencia;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public Empleado(HashSet<Dia> diasLaborables, HashSet<LocalDateTime> asistencia) {
+        this.diasLaborables = diasLaborables;
+        this.asistencia = asistencia;
+    }
+    public HashSet<Dia> getDiasLaborables() {
+        return diasLaborables;
     }
 
-    @Override
-    public String toString() {
-        return "Empleado " + nombre;
+    public void setDiasLaborables(HashSet<Dia> diasLaborables) {
+        this.diasLaborables = diasLaborables;
     }
+
+    public HashSet<LocalDateTime> getAsistencia() {
+        return asistencia;
+    }
+
+    public void setAsistencia(HashSet<LocalDateTime> asistencia) {
+        this.asistencia = asistencia;
+    }
+
+    public double porcentaje(int mes){
+        Double diasTotal = (double) (diasLaborables.size() * 4);
+        int contador = 0;
+        for (LocalDateTime fechaActual : asistencia) {
+            if (fechaActual.getDayOfMonth() == mes) {
+                contador++;
+            }
+        }
+        return contador*100/diasTotal;
+    }
+
 }
