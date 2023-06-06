@@ -1,10 +1,12 @@
+import java.util.HashSet;
+
 public class Plato {
     private String nombrePlato;
-    private Double precioPlato;
+    private Double cantCalorias;
 
-    public Plato(String nombrePlato, Double precioPlato) {
+    public Plato(String nombrePlato, Double cantCalorias) {
         this.nombrePlato = nombrePlato;
-        this.precioPlato = precioPlato;
+        this.cantCalorias = cantCalorias;
     }
 
     public String getNombrePlato() {
@@ -15,11 +17,11 @@ public class Plato {
         this.nombrePlato = nombrePlato;
     }
 
-    public Double getPrecioPlato() {
-        return precioPlato;
+    public Double getCantCalorias() {
+        return cantCalorias;
     }
 
-    public void setPrecioPlato(Double precioPlato) {
-        this.precioPlato = precioPlato;
+    public void setCantCalorias(Double cantCalorias) {
+        this.cantCalorias = cantCalorias;
     }
 }
