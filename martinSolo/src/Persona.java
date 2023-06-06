@@ -13,6 +13,13 @@ public class Persona {
         this.fechaNacimiento = fechaNacimiento;
     }
 
+    public Persona() {
+        
+    }
+
+    public Persona(String nombre, String apellido) {
+    }
+
     public String getNombre() {
         return nombre;
     }

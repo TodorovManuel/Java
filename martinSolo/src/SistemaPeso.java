@@ -19,6 +19,7 @@ public class SistemaPeso extends Persona{
     }
 
     public SistemaPeso(HashMap<Fecha, Double> listaPeso, HashMap<Fecha, Double> listaAltura) {
+        super();
         this.listaPeso = listaPeso;
         this.listaAltura = listaAltura;
     }
@@ -64,7 +65,7 @@ public class SistemaPeso extends Persona{
         return sumaTotal/listaAltura.size();
     }
 
-    // A HACER
+    // HACER LO MISMO PARA EL AÑO MAS GRANDE Y DESPUES SACAR LA DIFERENCIA jeje
     public double diferenciaCrecimiento(Integer anio) {
         Double mayorAltura = 0.0;
         for (Map.Entry<Fecha,Double> entrada: listaAltura.entrySet()) {

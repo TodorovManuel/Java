@@ -17,6 +17,9 @@ public class Familiar extends Persona{
     }
 
     public void caloriasConsumidas(HashSet<Plato>platosConsumidos){
-        System.out.println(platosConsumidos);
+        double calorias = 0.0;
+        for(Plato platos : platosConsumidos) {
+            calorias = calorias + platos.getCantCalorias();
+        }
     }
 }
