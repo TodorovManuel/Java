@@ -16,10 +16,11 @@ public class Familiar extends Persona{
         this.platosConsumidos = platosConsumidos;
     }
 
-    public void caloriasConsumidas(HashSet<Plato>platosConsumidos){
+    public double caloriasConsumidas(){
         double calorias = 0.0;
         for(Plato platos : platosConsumidos) {
             calorias = calorias + platos.getCantCalorias();
         }
+        return calorias;
     }
 }

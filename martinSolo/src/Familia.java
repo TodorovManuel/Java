@@ -17,19 +17,26 @@ public class Familia extends Familiar{
     }
 
     public double promCalorias() {
-        double promedio = 0.0;
+        double sumaTotal = 0;
+        int contador = 0;
         for(Familiar r : listaFamilias) {
-
+            sumaTotal = sumaTotal + r.caloriasConsumidas();
+            contador++;
         }
-        return 0;
+        return sumaTotal/contador;
     }
 
-    public int masCalorias() {
-        Double maxCalorias = 0.0;
-        return 0;
+    public double masCalorias() {
+        double maxCalorias = 0;
+        for(Familiar f : listaFamilias) {
+            if(maxCalorias == 0 || f.caloriasConsumidas() >= maxCalorias) {
+                maxCalorias = f.caloriasConsumidas();
+            }
+        }
+        return maxCalorias;
     }
 
-    public int minCalorias() {
+    public double minCalorias() {
         double minCalorias = -1.0;
         for(Familiar f : listaFamilias) {
             if(minCalorias == -1 || f.caloriasConsumidas() <= minCalorias) {
