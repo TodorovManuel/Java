@@ -1,3 +1,5 @@
+import persona.EmpleadoTelefono;
+
 public class Llamada {
     private EmpleadoTelefono empleadoOrigen;
     private EmpleadoTelefono empleadoDestino;
