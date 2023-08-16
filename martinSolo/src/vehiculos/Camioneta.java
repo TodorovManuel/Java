@@ -1,14 +1,15 @@
 package vehiculos;
 
 public class Camioneta extends Vehiculo {
+    private static Integer ruedas = 4;
     public Camioneta(String marca, String modelo, String color, Integer cantRuedas, String anioFabricacion) {
-        super(marca, modelo, color, cantRuedas, anioFabricacion);
+        super();
     }
     private String patente;
     private double capacidadCarga;
 
     public Camioneta(String marca, String modelo, String color, Integer cantRuedas, String anioFabricacion, String patente, double capacidadCarga) {
-        super(marca, modelo, color, cantRuedas, anioFabricacion);
+        super();
         this.patente = patente;
         this.capacidadCarga = capacidadCarga;
     }

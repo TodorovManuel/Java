@@ -4,8 +4,10 @@ public class Coche extends Vehiculo {
     private String patente;
     private Boolean descapotable;
 
+    private static Integer ruedas = 4;
+
     public Coche(String marca, String modelo, String color, Integer cantRuedas, String anioFabricacion, String patente, boolean descapotable) {
-        super(marca, modelo, color, cantRuedas, anioFabricacion);
+        super();
         this.patente = patente;
         this.descapotable = descapotable;
     }

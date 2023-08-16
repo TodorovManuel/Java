@@ -43,9 +43,23 @@ public class CentroMascotas {
                 System.out.println("Ingrese el nuevo nombre de su mascota: ");
                 Scanner leer=new Scanner(System.in);
                 nombreIngresado=leer.next();
-                // Hay que fijarse esto q onda
-                mascot.getNombre().replace(nombreIngresado);
+                mascot.setNombre(nombreIngresado);
             }
         }
+    }
+
+    public void saludar(String nombreDuenio, String nombreMascota) {
+        boolean terminar = false;
+
+        for (Mascota mascot: mascotas) {
+            if(mascot.getNombre().equals(nombreMascota)) {
+                if(mascot.getDuenio().equals(nombreDuenio)) {
+                    System.out.println(mascot.getSaludo());
+                } else {
+                    System.out.println(mascot.getSaludo().toUpperCase() + "!");
+                }
+            }
+        }
+
     }
 }

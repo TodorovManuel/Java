@@ -3,7 +3,7 @@ package mascotas;
 import persona.Persona;
 
 public class Perro extends  Mascota{
-    private static String saludo =  "GUAF";
+    private static String saludo =  "guaf";
     public Perro(String nombre, Duenio duenio) {
         super(nombre, duenio);
     }
@@ -12,11 +12,11 @@ public class Perro extends  Mascota{
         super();
     }
 
-    public static String getSaludo() {
+    public String getSaludo() {
         return saludo;
     }
 
-    public static void setSaludo(String saludo) {
+    public void setSaludo(String saludo) {
         Perro.saludo = saludo;
     }
 

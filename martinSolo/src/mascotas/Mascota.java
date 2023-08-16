@@ -3,6 +3,11 @@ package mascotas;
 public class Mascota {
     private String nombre;
     private Duenio duenio;
+    private String saludo;
+
+    public Mascota(String saludo) {
+        this.saludo = saludo;
+    }
 
     public Mascota(String nombre, Duenio duenio) {
         this.nombre = nombre;
@@ -27,5 +32,13 @@ public class Mascota {
 
     public void setDuenio(Duenio duenio) {
         this.duenio = duenio;
+    }
+
+    public String getSaludo() {
+        return saludo;
+    }
+
+    public void setSaludo(String saludo) {
+        this.saludo = saludo;
     }
 }
