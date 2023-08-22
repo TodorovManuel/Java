@@ -20,4 +20,14 @@ public class Perro extends  Mascota{
         Perro.saludo = saludo;
     }
 
+    @Override
+    public void saludar(Boolean esDuenio) {
+        if (esDuenio == true) {
+            System.out.println(getSaludo());
+        } else {
+            System.out.println(getSaludo().toUpperCase() + " !");
+        }
+    }
+
+
 }

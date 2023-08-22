@@ -1,6 +1,6 @@
 package mascotas;
 
-public class Mascota {
+public abstract  class Mascota {
     private String nombre;
     private Duenio duenio;
     private String saludo;
@@ -41,4 +41,5 @@ public class Mascota {
     public void setSaludo(String saludo) {
         this.saludo = saludo;
     }
+    public abstract void saludar(Boolean esDuenio);
 }

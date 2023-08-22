@@ -48,18 +48,20 @@ public class CentroMascotas {
         }
     }
 
-    public void saludar(String nombreDuenio, String nombreMascota) {
-        boolean terminar = false;
-
+    public void saludarMascota(String nombreDuenio, String nombreMascota) {
+        boolean esDuenio = false;
         for (Mascota mascot: mascotas) {
             if(mascot.getNombre().equals(nombreMascota)) {
                 if(mascot.getDuenio().equals(nombreDuenio)) {
                     System.out.println(mascot.getSaludo());
-                } else {
-                    System.out.println(mascot.getSaludo().toUpperCase() + "!");
+                    if(mascot.getSaludo().equals(null)){
+                        esDuenio = true;
+                    }
                 }
+                mascot.saludar(esDuenio);
             }
         }
 
     }
+
 }

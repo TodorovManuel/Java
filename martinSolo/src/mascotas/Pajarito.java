@@ -11,11 +11,21 @@ public class Pajarito extends Mascota{
     public Pajarito() {
     }
 
-    public static String getSaludo() {
+    public String getSaludo() {
         return saludo;
     }
 
-    public static void setSaludo(String saludo) {
+    public void setSaludo(String saludo) {
         Pajarito.saludo = saludo;
+    }
+
+
+    @Override
+    public void saludar(Boolean esDuenio) {
+        if (esDuenio == true) {
+            System.out.println(getSaludo());
+        } else {
+            System.out.println(getSaludo().toUpperCase() + " !");
+        }
     }
 }
