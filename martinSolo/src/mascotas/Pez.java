@@ -26,6 +26,10 @@ public class Pez extends Mascota{
 
     @Override
     public void saludar(Boolean esDuenio) {
-
+        if (esDuenio == true) {
+            vidas--;
+        } else {
+            vidas=0;
+        }
     }
 }

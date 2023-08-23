@@ -63,5 +63,12 @@ public class CentroMascotas {
         }
 
     }
+    public void alimentar(String nombreMascota, Integer vidas){
+        for(Mascota mascote: mascotas) {
+            if(mascote.getNombre().equals(nombreMascota) && mascote instanceof Pez) {
+                vidas++;
+            }
+        }
 
+    }
 }
