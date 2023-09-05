@@ -10,6 +10,6 @@ public class Tecnico extends Operario {
 
     @Override
     public String toString() {
-        return "persona.Empleado " + nombre + " -> persona.Operario " + " -> persona.Tecnico";
+        return "persona.Empleado " + this.getNombre() + " -> persona.Operario " + " -> persona.Tecnico";
     }
 }

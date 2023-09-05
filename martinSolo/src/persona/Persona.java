@@ -2,8 +2,6 @@ package persona;
 
 import tiempo.Fecha;
 
-import java.util.HashSet;
-
 public class Persona {
     private String nombre;
     private String apellido;
@@ -54,8 +52,8 @@ public class Persona {
         this.telefono = telefono;
     }
 
-    public Fecha getFechaNacimiento() {
-        return fechaNacimiento;
+    public String getFechaNacimiento() {
+        return fechaNacimiento.toString();
     }
 
     public void setFechaNacimiento(Fecha fechaNacimiento) {

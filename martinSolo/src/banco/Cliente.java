@@ -1,5 +1,7 @@
 package banco;
 
+import persona.Persona;
+
 public class Cliente extends Persona {
     private long CUIL;
 

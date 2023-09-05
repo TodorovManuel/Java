@@ -2,12 +2,12 @@ package sensores;
 
 import java.util.ArrayList;
 
-public class SensorComplejo{
+public class SensorComplejo extends Detector{
 
     private ArrayList<Detector> detectores;
     private Double umbral;
     public SensorComplejo(Boolean conectado, Double medida, Double valorUmbral, Integer anio, ArrayList<DetectorHumo> detectoresHumo, ArrayList<SensorTemperatura> sensoresTemperatura, ArrayList<SensorPresion> sensoresPresion) {
-        super();
+        super(conectado, medida, valorUmbral, anio);
     }
 
     public ArrayList<Detector> getDetectores() {
@@ -27,7 +27,7 @@ public class SensorComplejo{
     }
 
     public SensorComplejo(Boolean conectado, Double medida, Double valorUmbral, Integer anio, ArrayList<DetectorHumo> detectoresHumo, ArrayList<SensorTemperatura> sensoresTemperatura, ArrayList<SensorPresion> sensoresPresion, ArrayList<Detector> detectores, Double umbral) {
-        super();
+        super(conectado, medida, valorUmbral, anio);
         this.detectores = detectores;
         this.umbral = umbral;
     }

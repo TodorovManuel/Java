@@ -1,13 +1,15 @@
 package persona;
 
+import sensores.Dia;
+
 import java.time.LocalDateTime;
 import java.util.HashSet;
 
 public class Empleado extends Persona {
     HashSet<Dia>diasLaborables;
     HashSet<LocalDateTime>asistencia;
-
-    public Empleado(Integer telefono, Fecha fechaNacimiento, HashSet<Dia> diasLaborables, HashSet<LocalDateTime> asistencia) {
+/*
+    public Empleado(String telefono, String fechaNacimiento, HashSet<Dia> diasLaborables, HashSet<LocalDateTime> asistencia) {
         super(telefono, fechaNacimiento);
         this.diasLaborables = diasLaborables;
         this.asistencia = asistencia;
@@ -18,11 +20,16 @@ public class Empleado extends Persona {
         this.diasLaborables = diasLaborables;
         this.asistencia = asistencia;
     }
-
+*/
     public Empleado(HashSet<Dia> diasLaborables, HashSet<LocalDateTime> asistencia) {
         this.diasLaborables = diasLaborables;
         this.asistencia = asistencia;
     }
+
+    public Empleado(String nombre) {
+        this.setNombre(nombre);
+    }
+
     public HashSet<Dia> getDiasLaborables() {
         return diasLaborables;
     }

@@ -9,6 +9,6 @@ public class Oficial extends Operario {
 
     @Override
     public String toString() {
-        return "persona.Empleado " + nombre + " -> persona.Operario" + " -> persona.Oficial";
+        return "persona.Empleado " + this.getNombre() + " -> persona.Operario" + " -> persona.Oficial";
     }
 }

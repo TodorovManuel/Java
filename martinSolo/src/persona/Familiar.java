@@ -1,6 +1,8 @@
 package persona;
 
+import cocina.Plato;
 import persona.Persona;
+import tiempo.Fecha;
 
 import java.util.HashSet;
 

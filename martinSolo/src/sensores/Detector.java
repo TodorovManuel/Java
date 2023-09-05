@@ -25,6 +25,10 @@ public class Detector {
     }
 
     public Detector(Boolean conectado, Double medida, Double valorUmbral, Integer anio) {
+        this.conectado = conectado;
+        this.medida = medida;
+        this.valorUmbral = valorUmbral;
+        this.anio = anio;
     }
 
     public ArrayList<DetectorHumo> getDetectoresHumo() {
@@ -95,5 +99,9 @@ public class Detector {
 
 
     //  MISMA FUNCIÓN CON TEMPERATURA Y HUMO
+    public void getInfo() {
+        System.out.println("La medida es: " + this.medida);
+        System.out.println("El valor umbral es: " + this.valorUmbral);
+    }
 
 }

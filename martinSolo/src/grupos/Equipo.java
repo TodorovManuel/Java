@@ -1,6 +1,7 @@
 package grupos;
 
 import persona.Jugador;
+import tiempo.Dia;
 
 import java.util.ArrayList;
 

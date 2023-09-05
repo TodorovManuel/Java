@@ -2,6 +2,7 @@ package grupos;
 
 import vehiculos.Camioneta;
 import vehiculos.Coche;
+import vehiculos.Vehiculo;
 
 import java.util.ArrayList;
 

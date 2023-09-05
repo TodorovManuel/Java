@@ -10,6 +10,6 @@ public class Operario extends Empleado {
 
     @Override
     public String toString() {
-        return "persona.Empleado " + nombre + " -> persona.Operario";
+        return "persona.Empleado " + this.getNombre() + " -> persona.Operario";
     }
 }

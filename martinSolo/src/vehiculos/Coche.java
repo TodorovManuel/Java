@@ -27,6 +27,10 @@ public class Coche extends Vehiculo {
     public void setDescapotable(boolean descapotable) {
         this.descapotable = descapotable;
     }
+
+    public boolean getDescapotable() {
+        return this.descapotable;
+    }
     /* private String marca;
     private String modelo;
     private String color;
