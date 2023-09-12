@@ -7,9 +7,8 @@ public class Libro {
     private String nombrePdf;
     private Integer descargasDisponibles;
 
-    public Libro(String titulo, Autor autor, GeneroLibro genero, String nombrePdf, Integer descargasDisponibles) {
+    public Libro(String titulo, GeneroLibro genero, String nombrePdf, Integer descargasDisponibles) {
         this.titulo = titulo;
-        this.autor = autor;
         this.genero = genero;
         this.nombrePdf = nombrePdf;
         this.descargasDisponibles = descargasDisponibles;

@@ -63,8 +63,22 @@ public class Sistema {
         }
     }
 
+    public static void limiteDePrestamos(Libro libro) throws LimiteDePrestamosAlcanzadoException{
+        if(libro.getDescargasDisponibles().equals(0)) {
+            throw new LimiteDePrestamosAlcanzadoException("El limite de descargas ha sido alzanzado");
+        }
+    }
+
     public static void main(String[] args) {
         Sistema sistema = new Sistema();
-        Usuario pepe = new Usuario(); 
+        Libro henry = new Libro("Henry pointer", GeneroLibro.SAGA, "HenryPointer.pdf", 0);
+        sistema.agregarLibro(henry);
+        try {
+            limiteDePrestamos(henry);
+        }
+        catch (LimiteDePrestamosAlcanzadoException e) {
+            e.printStackTrace();
+            e.getMessage();
+        }
     }
 }
