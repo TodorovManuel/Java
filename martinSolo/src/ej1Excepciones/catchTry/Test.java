@@ -1,4 +1,4 @@
-package catchTry;
+package ej1Excepciones.catchTry;
 
 public class Test {
 
