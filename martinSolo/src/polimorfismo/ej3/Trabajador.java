@@ -1,4 +1,4 @@
-package ej3excepciones;
+package polimorfismo.ej3;
 
 import persona.Persona;
 import tiempo.Fecha;

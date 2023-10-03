@@ -1,6 +1,4 @@
-package ej2Excepciones;
-
-import persona.Persona;
+package polimorfismo.ej2;
 
 import java.util.HashSet;
 

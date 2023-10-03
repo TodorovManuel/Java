@@ -1,6 +1,6 @@
-package ej3excepciones;
+package polimorfismo.ej3;
 
-public class TelefonoMovil extends Dispositivo{
+public class  TelefonoMovil extends Dispositivo{
     private Compania compania;
     private int numeroTelefonico;
 

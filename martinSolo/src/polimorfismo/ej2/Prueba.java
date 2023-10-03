@@ -1,4 +1,4 @@
-package ej2Excepciones;
+package polimorfismo.ej2;
 
 import java.time.LocalDateTime;
 

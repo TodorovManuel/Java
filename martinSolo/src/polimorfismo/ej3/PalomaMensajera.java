@@ -1,4 +1,4 @@
-package ej3excepciones;
+package polimorfismo.ej3;
 
 public class PalomaMensajera implements Mensajeria{
     private Boolean aprendio;

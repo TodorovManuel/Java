@@ -1,4 +1,4 @@
-package ej1Excepciones.catchTry;
+package polimorfismo.ej1.catchTry;
 
 public class Test {
 

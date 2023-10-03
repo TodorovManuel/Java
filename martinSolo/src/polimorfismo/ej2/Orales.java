@@ -1,7 +1,6 @@
-package ej2Excepciones;
+package polimorfismo.ej2;
 
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 
 public class Orales extends Prueba{
     private Suficiencia suficiencia;

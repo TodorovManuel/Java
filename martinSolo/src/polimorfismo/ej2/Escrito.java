@@ -1,4 +1,4 @@
-package ej2Excepciones;
+package polimorfismo.ej2;
 
 public class Escrito extends Prueba implements Aprobado{
     private static int duracionMaxima = 90;
