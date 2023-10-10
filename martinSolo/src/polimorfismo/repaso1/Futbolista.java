@@ -8,10 +8,10 @@ public class Futbolista {
     private LocalDateTime fechaNacimiento;
     private String posicion;
     private Provincia provincia;
-    private HashSet<Club> historialEquipos;
+    private HashSet<String> historialEquipos;
     private int numeroCamiseta;
 
-    public Futbolista(String nombre, LocalDateTime fechaNacimiento, String posicion, Provincia provincia, HashSet<Club> historialEquipos, int numeroCamiseta) {
+    public Futbolista(String nombre, LocalDateTime fechaNacimiento, String posicion, Provincia provincia, HashSet<String> historialEquipos, int numeroCamiseta) {
         this.nombre = nombre;
         this.fechaNacimiento = fechaNacimiento;
         this.posicion = posicion;
@@ -52,7 +52,7 @@ public class Futbolista {
         this.provincia = provincia;
     }
 
-    public HashSet<Club> getHistorialEquipos() {
+    public HashSet<String> getHistorialEquipos() {
         return historialEquipos;
     }
 
